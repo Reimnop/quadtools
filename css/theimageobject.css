@@ -152,9 +152,6 @@ body * {
     margin: 2px 16px;
 }
 
-.charcount {
-    margin-top: 32px;
-}
 
 .checkmark {
     display: flex;
@@ -283,4 +280,13 @@ body * {
     filter: brightness(80%);
     transform: scale(0.95);
     border-radius: 32px;
+}
+
+.charcount {
+    background-color: hsl(0, 0%, 25%);
+    border-radius: 16px;
+    padding: 16px 24px;
+    text-align: left;
+    max-width: 768px;
+    margin-top: 32px;
 }

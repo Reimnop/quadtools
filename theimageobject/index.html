@@ -34,7 +34,8 @@
         </div>
     </div>
 
-    <div style="text-align: center; font-weight: 700; font-size: 75px; margin: 96px 0 64px 0;">The Image Object</div>
+    <div style="text-align: center; font-weight: 700; font-size: 75px; margin: 96px 0 16px 0;">The Image Object</div>
+    <div style="text-align: center; font-weight: 400; font-size: 25px; margin: 0px 0 64px 0;">(BETA)</div>
 
     <div class="tto__content">
         <div class="tto__column">
@@ -65,7 +66,7 @@
                     <div class="checkbox__checkmark"></div>
                 </label>
                 <div id="transparency" class="checkmark__text">Use transparency
-                    <div class="checkmark__tooltip">Will require 2 extra characters, always "FF" for .jpg/.jpeg since this format doesn't support transparency</div>
+                    <div class="checkmark__tooltip">Will require 2 extra symbols per pixel, always "FF" for .jpg/.jpeg since this format doesn't support transparency</div>
                 </div>
             </div>
             <div class="convertbutton">
@@ -88,14 +89,28 @@
                         </button>
                     </div>
                 </div>
-                <div class="preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, cumque deleniti! Ducimus sequi, aperiam maiores repellat beatae harum error deleniti.</div>
+                <div class="preview"></div>
             </div>
             
-            <div class="charcount">Symbols count</div>
+            <div class="charcount">
+                <div style="font-size: 20px; font-weight: 500;">Symbols: </div>
+                <div id="symbollimit" style="display: none; color:hsl(0, 50%, 90%);padding: 8px 10px; font-size: 15px; margin-top: 12px; background-color: hsl(0, 50%, 10%); border: 2px solid hsl(0, 50%, 20%); border-radius: 8px;">
+                    <i class="fas fa-exclamation-triangle" style="color:inherit; font-size: inherit;"></i>
+                    <span style="color:inherit; font-size: inherit;">The result has more than 16,382 symbols, which is the symbol limit for a single text object. Some pixels will be lost.</span>
+                </div>
+            </div>
         </div>
 
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <span style="font-size: 16px; margin-right: 4px;">Made by enchart</span>
+        <a href="https://www.youtube.com/enchart">
+            <i class="fab fa-youtube" style="font-size: 16px;"></i>
+        </a>
+        <a href="https://github.com/enchart/">
+            <i class="fab fa-github" style="font-size: 16px;"></i>
+        </a>
+    </div>
     <script src="../js/theimageobject.js"></script>
 </body>
 </html>

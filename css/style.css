@@ -10,6 +10,7 @@
 body {
     background: linear-gradient(to bottom, hsl(0, 0%, 7.5%), hsl(0, 0%, 10%));
     background-size: 100% auto;
+    width: 100%;
     margin: 0;
 }
 
@@ -154,8 +155,10 @@ body {
 
 .footer {
     background-color: black;
-    height: 64px;
-    padding: 0px;
+    height: 48px;
+    padding: 0 0 0 24px;
     margin: 32px 0 0 0;
-    width: 100%;
+    white-space: nowrap;
+    line-height: 48px;
+    font-size: 16px;
 }

@@ -110,11 +110,12 @@ function UpdateImage(file, alpha) {
         output = pixelStrings.join("");
         console.log(output);
         document.querySelector(".preview").innerText = output;
+        document.querySelector(".charcount").children[0].innerHTML = `Symbols: ${output.length}/16382`;
+        document.getElementById("symbollimit").style.display = output.length > 16382 ? "block" : "none";
         URL.revokeObjectURL(img.src);
 
         document.querySelector(".tto__content").style.gridTemplateColumns = "1fr 1fr 1fr";
         document.getElementById("column3").style.display = "block";
-
     };
 
     img.src = URL.createObjectURL(file);
