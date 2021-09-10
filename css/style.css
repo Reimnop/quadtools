@@ -93,7 +93,7 @@ body {
 }
 
 .tool {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(../img/theimageobject.jpg);
+    background: linear-gradient(to bottom, hsla(0, 0%, 25%, 100%),rgba(0,0,0,1));
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 640px;
