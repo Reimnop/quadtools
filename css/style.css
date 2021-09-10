@@ -1,0 +1,161 @@
+
+* {
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid white; */
+}
+
+body {
+    background: linear-gradient(to bottom, hsl(0, 0%, 7.5%), hsl(0, 0%, 10%));
+    background-size: 100% auto;
+    margin: 0;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1600px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__button {
+    padding: 12px;
+    margin: 0px 12px;
+    transition-duration: 0.05s;
+    border-radius: 8px;
+}
+
+.header__button:hover {
+    color:black;
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.header__button:active {
+    transform: scale(1.0);
+    filter: brightness(80%);
+}
+
+.header__icon {
+    height: 64px;
+    width: 64px;
+    transition-duration: 0.05s;
+    border-radius: 8px;
+}
+
+.header__icon:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.header__icon:hover img {
+    filter: invert(100%);
+}
+
+.header__icon:active {
+    transform: scale(1.0);
+    filter: brightness(80%);
+}
+
+
+.header__bar {
+    margin: 8px auto;
+}
+
+.header__bar__line {
+    width: 100%;
+}
+
+.biglogo {
+    width: 128px;
+    transition-duration: 0.2s;
+}
+
+.biglogo:hover {
+    transform: scale(1.1);
+}
+
+.tool {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.75)), url(../img/theimageobject.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 640px;
+    width: 100%;
+    transition-duration: 0.25s;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tool__title {
+    font-weight: 700;
+    font-size: 80px;
+    padding-bottom: 8px;
+    border-bottom: 4px solid white;
+    width: fit-content;
+    margin: 32px auto;
+}
+
+.tool__description {
+    margin: 0 auto;
+    max-width: 832px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tool__button {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 40px;
+    width: fit-content;
+    margin: 40px auto 0px auto;
+    padding: 16px 64px;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+}
+
+.tool__button:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+    border-radius: 24px;
+}
+
+.tool__button:active {
+    transform: scale(1.025);
+    filter: brightness(80%);
+    border-radius: 32px;
+}
+
+.hoverzoom {
+    transition-duration: 0.2s;
+}
+
+.hoverzoom:hover {
+    transform: scale(1.005);
+}
+
+.footer {
+    background-color: black;
+    height: 64px;
+    padding: 0px;
+    margin: 32px 0 0 0;
+    width: 100%;
+}
