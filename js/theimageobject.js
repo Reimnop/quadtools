@@ -99,10 +99,16 @@ function UpdateImage(file, alpha) {
 
         context.drawImage(img, 0, 0, img.naturalWidth, img.naturalHeight);
 
+        let lastPix = null;
         for (let y = 0; y < img.naturalHeight; y++) {
             for (let x = 0; x < img.naturalWidth; x++) {
                 let pixel = context.getImageData(x, y, 1, 1).data;
-                pixelStrings.push(`<#${rgbToHex(pixel[0], pixel[1], pixel[2])}${alpha ? numToHex(pixel[3]) : ''}>█`);
+				let pixStr = `<#${rgbToHex(pixel[0], pixel[1], pixel[2])}${alpha ? numToHex(pixel[3]) : ''}>`;
+                if (pixStr != lastPix) {
+                    pixelStrings.push(pixStr);
+                }
+                lastPix = pixStr;
+                pixelStrings.push(`█`);
             }
             pixelStrings.push('<br>');
         }
